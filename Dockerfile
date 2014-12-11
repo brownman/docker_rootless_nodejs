@@ -1,6 +1,6 @@
 FROM brownman/docker-rootless
 
-ADD . /docker
-#RUN chmod 777 /docker/nvm.sh
+ADD . $HOME
+RUN chmod 777 $HOME/nvm.sh
 
-RUN bash -c /docker/nvm.sh
+RUN bash -c $HOME/nvm.sh
