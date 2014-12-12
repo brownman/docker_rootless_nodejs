@@ -1,7 +1,7 @@
 FROM brownman/docker-rootless
 USER gitlab_ci_runner
 ADD . $HOME
-RUN bash -c "sudo chmod 777 $HOME/nvm.sh"
+#RUN bash -c "sudo chmod 777 $HOME/nvm.sh"
 
 #RUN bash -c $HOME/nvm.sh
 RUN wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
